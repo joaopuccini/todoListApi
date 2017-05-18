@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/generalgmt/RESTfulAPITutorial.git"
+    "url": "https://github.com/renatoppuccini/todoListApi.git"
   },
   "keywords": [
     "RESTfull"
   ],
-  "author": "puccini",
-  "license": "ISC",
+  "author": "other",
+  "license": "apache",
   "devDependencies": {
     "nodemon": "^1.11.0"
   },
