@@ -1,0 +1,29 @@
+{
+  "name": "todolistapi",
+  "version": "1.0.0",
+  "description": "Niteroi test api",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\" Error: no test specified\\\"&& exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/generalgmt/RESTfulAPITutorial.git"
+  },
+  "keywords": [
+    "RESTfull"
+  ],
+  "author": "puccini",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.8"
+  },
+  "optionalDependencies": {
+    "mongoose": "4.9.8"
+  }
+}
