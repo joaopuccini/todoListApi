@@ -1,12 +1,12 @@
 var express = require('express'),
     app = express(),
-    port = process.env.PORT || 3000,
+    port = process.env.PORT || 8080,
     mongoose = require('mongoose'),
     Task = require('./api/models/todoListModel'),
     bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/Tododb');
+mongoose.connect('mongodb://process.env.MONGODB_DATABASE/Tododb');
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
