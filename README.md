@@ -1,5 +1,5 @@
 # todoListApi
-#The following steps are for using it on your laptop.
+## The following steps are for using it on your laptop.
 
 ## Install nodemon
 ```sh
@@ -20,9 +20,10 @@ npm run start
 ```sh
 npm install mongoose --save
 ```
-#Using containers, you just need to have the following on your Dockerfile:
-##Dockerfile
-``FROM docker.io/node:6.9-slim
+# Using containers, you just need to have the following on your Dockerfile:
+## Dockerfile
+```
+FROM docker.io/node:6.9-slim
 # replace this with your application's default port
 
 WORKDIR /usr/src/app
