@@ -2,8 +2,7 @@
   "name": "todolistapi",
   "version": "1.0.0",
   "description": "Niteroi test api",
-  "main": "index.js"
-  },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/renatoppuccini/todoListApi.git"
