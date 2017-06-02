@@ -2,9 +2,9 @@
   "name": "todolistapi",
   "version": "1.0.0",
   "description": "Niteroi test api",
-  "main": "index.js",
-  "scripts": {
-    "test": "\"echo \\\" Error: no test specified\\\"&& exit 1\""
+  "main": "index.js"
+  //"scripts": {
+    //"test": "\"echo \\\" Error: no test specified\\\"&& exit 1\""
   },
   "repository": {
     "type": "git",
