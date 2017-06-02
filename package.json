@@ -2,9 +2,7 @@
   "name": "todolistapi",
   "version": "1.0.0",
   "description": "Niteroi test api",
-  "main": "index.js",
-  "scripts": {
-    "test": "\"echo \\\" Error: no test specified\\\"&& exit 1\""
+  "main": "index.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +12,8 @@
     "RESTfull"
   ],
   "author": "other",
-  "license": "apache",
+  "license": "SPDX",
+  "private": true,
   "devDependencies": {
     "nodemon": "^1.11.0"
   },
