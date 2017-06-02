@@ -14,7 +14,8 @@
     "RESTfull"
   ],
   "author": "other",
-  "license": "apache",
+  "license": "SPDX",
+  "private": true,
   "devDependencies": {
     "nodemon": "^1.11.0"
   },
