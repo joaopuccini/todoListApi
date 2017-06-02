@@ -12,6 +12,7 @@
   ],
   "author": "puccini",
   "license": "SPDX",
+  "private":true,
   "devDependencies": {
     "nodemon": "^1.11.0"
   },
