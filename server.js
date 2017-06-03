@@ -9,7 +9,7 @@ mongoose.Promise = global.Promise;
 
 //mongoose.connect('mongodb://redhat:redhat@' + process.env.MONGO_PORT_27017_TCP_ADDR + ':' + process.env.MONGO_PORT_27017_TCP_PORT || '/Tododb', function(err, db) {
 //mongoose.connect('mongodb://' + process.env.DATABASE_SERVICE_NAME +'_MONGODB_USER' +':'+ process.env.DATABASE_SERVICE_NAMEMONGODB_PASSWORD +'@'+  process.env.MONGODB_SERVICE_HOST + ':' + process.env.MONGODB_SERVICE_PORT_MONGODB || '/Tododb', function(err, db) {
- mongoose.connect('mongodb://redhat:redhat@' +  process.env.MONGODB_SERVICE_HOST + ':' + process.env.MONGODB_SERVICE_PORT_MONGODB || '/Tododb?authSource=dbWithUserCredentials', function(err, db) {
+ mongoose.connect('mongodb://[redhat:redhat@]' +  process.env.MONGODB_SERVICE_HOST + ':' + process.env.MONGODB_SERVICE_PORT_MONGODB || '/Tododb?authSource=dbWithUserCredentials', function(err, db) {
    if (err) {
       console.error(err);
        throw err;
