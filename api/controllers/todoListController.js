@@ -6,9 +6,15 @@ var mongoose = require('mongoose'),
 
 exports.list_all_tasks = function(req, res) {
     Task.find({}, function(err, task) {
-        if (err)
-            res.send(err);
+        //if (err)
+        //    res.send(err);
+        //res.json(task);
+        
+         if(err){
+          return res.send('err');
+        }
         res.json(task);
+        return res.send('success');
     });
 };
 
@@ -27,9 +33,17 @@ exports.create_a_task = function(req, res) {
 
 exports.read_a_task = function(req, res) {
     Task.findById(req.params.taskId, function(err, task) {
-        if (err)
-            res.send(err);
+    //    if (err)
+   //         res.send(err);
+   //     res.json(task);
+        
+         if(err){
+          return res.send('err');
+        }
         res.json(task);
+        return res.send('success');
+        
+        
     });
 };
 
