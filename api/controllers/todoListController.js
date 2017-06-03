@@ -11,7 +11,7 @@ exports.list_all_tasks = function(req, res) {
         //res.json(task);
         
          if(err){
-          return res.send('err');
+          return res.send('All tasks: '+err);
         }
         res.json(task);
         return res.send('success');
@@ -38,7 +38,7 @@ exports.read_a_task = function(req, res) {
    //     res.json(task);
         
          if(err){
-          return res.send('err');
+          return res.send('Read a task: '+err);
         }
         res.json(task);
         return res.send('success');
