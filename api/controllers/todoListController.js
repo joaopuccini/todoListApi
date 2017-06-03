@@ -14,7 +14,7 @@ exports.list_all_tasks = function(req, res) {
           return res.send('All tasks: '+err);
         }
         res.json(task);
-        return res.send('success');
+      //  return res.send('success');
     });
 };
 
