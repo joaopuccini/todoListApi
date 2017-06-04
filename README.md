@@ -1,4 +1,13 @@
 # todoListApi
+
+# requirements
+
+## Mongodb
+
+```
+docker run --name mongodb -p 0.0.0.0:27017:27017 mongo
+```
+
 ## The following steps are for using it on your laptop.
 
 ## Install nodemon
@@ -20,20 +29,19 @@ npm run start
 ```sh
 npm install mongoose --save
 ```
-# Using containers, you just need to have the following on your Dockerfile:
-## Dockerfile
+# Running in Openshift
+
+Considering you have a openshift cluster running eg: `oc cluster up `
+
 ```
-FROM docker.io/node:6.9-slim
-# replace this with your application's default port
-
-WORKDIR /usr/src/app
-
-COPY package.json /usr/src/app/
-RUN npm install
-
-COPY . /usr/src/app 
-
-EXPOSE 8081
-
-CMD ["npm","start"]
+oc new-app --name=todolist --template=nodejs-mongo-persistent \
+--param SOURCE_REPOSITORY_URL=https://github.com/renatoppuccini/todoListApi.git \
+--param SOURCE_REPOSITORY_REF=master \
+--param DATABASE_SERVICE_NAME=mongodb \
+--param DATABASE_USER=redhat \
+--param DATABASE_PASSWORD=redhat \
+--param DATABASE_NAME=Tododb \
+--param DATABASE_ADMIN_PASSWORD=redhat
 ```
+
+And remove the default healthchecks. To do it, go in web console > Deployments > nodejs-mongo-persistent > Actions > Edit Health Checks > Remove readiness and Remove probiness
