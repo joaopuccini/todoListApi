@@ -45,3 +45,6 @@ oc new-app --name=todolist --template=nodejs-mongo-persistent \
 ```
 
 And remove the default healthchecks. To do it, go in web console > Deployments > nodejs-mongo-persistent > Actions > Edit Health Checks > Remove readiness and Remove probiness
+
+
+## testando
